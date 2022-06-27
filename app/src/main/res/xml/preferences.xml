@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="remember"
+        android:summary="Le Pseudo renseigné sera automatiquement affiché"
+        android:title="Garder Préférences" />
+
+    <EditTextPreference
+        android:defaultValue="http://10.0.2.2/android_chat/data.php"
+        android:key="urlData"
+        android:summary="Adresse de la page fournissant les données d'absence. Utiliser 10.0.2.2 pour désigner le serveur sur lequel tourne l'émulateur"
+        android:title="URL du serveur" />
+
+    <PreferenceCategory
+        android:key="identifiants"
+        android:summary="Identifiants utilisateur"
+        android:title="Identifiants">
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="login"
+            android:title="Pseudo" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="passe"
+            android:title="Mot de passe" />
+        <EditTextPreference
+            android:defaultValue='[{"login": "Emilien", "mesListeToDo": [{"titreListToDo": "Liste n°0", "lesItems": [{"description": "TP1", "fait": true}, {"description": "TP2/3", "fait": false}] }] }]'
+            android:key="profilList"
+            android:title="Listes" />
+        <EditTextPreference
+            android:defaultValue=''
+            android:key="hash"
+            android:title="Hash" />
+        <EditTextPreference
+            android:defaultValue="http://tomnab.fr/todo-api/"
+            android:key="url"
+            android:title="URL" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
